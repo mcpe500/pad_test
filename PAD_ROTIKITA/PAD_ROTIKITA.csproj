@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88E49A68-42F2-401A-9A0D-3BF72AA1032E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PAD_ROTIKITA</RootNamespace>
+    <AssemblyName>PAD_ROTIKITA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Admin_tambah.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_tambah.Designer.cs">
+      <DependentUpon>Admin_tambah.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_daftar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_daftar.Designer.cs">
+      <DependentUpon>Admin_daftar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_buang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_buang.Designer.cs">
+      <DependentUpon>Admin_buang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_diskon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_diskon.Designer.cs">
+      <DependentUpon>Admin_diskon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_diskon_dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_diskon_dialog.Designer.cs">
+      <DependentUpon>Admin_diskon_dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_bundle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_bundle.Designer.cs">
+      <DependentUpon>Admin_bundle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_bundle_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_bundle_edit.Designer.cs">
+      <DependentUpon>Admin_bundle_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin_menu.Designer.cs">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buang.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dbundle.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="diskon.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dtran.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FormHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHistory.Designer.cs">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hbundle.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="htran.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="jenis_roti.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kasir\Kasir_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasir\Kasir_history.Designer.cs">
+      <DependentUpon>Kasir_history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasir\FormStruk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasir\FormStruk.Designer.cs">
+      <DependentUpon>FormStruk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasir\Kasir_transaksi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasir\Kasir_transaksi.Designer.cs">
+      <DependentUpon>Kasir_transaksi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasir\Kasir_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kasir\Kasir_menu.Designer.cs">
+      <DependentUpon>Kasir_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Owner\Owner_report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner\Owner_report.Designer.cs">
+      <DependentUpon>Owner_report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner\Owner_register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner\Owner_register.Designer.cs">
+      <DependentUpon>Owner_register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Owner\Owner_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Owner\Owner_menu.Designer.cs">
+      <DependentUpon>Owner_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="roti.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoundedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Contracts\UserRelated.cs" />
+    <Compile Include="Contracts\RotiRelated.cs" />
+    <Compile Include="Controller\UserHandler.cs" />
+    <Compile Include="Controller\RotiHandler.cs" />
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DatabaseService.cs" />
+    <Compile Include="transDiskon.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="user.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin\Admin_buang.resx">
+      <DependentUpon>Admin_buang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_bundle.resx">
+      <DependentUpon>Admin_bundle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_bundle_edit.resx">
+      <DependentUpon>Admin_bundle_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_daftar.resx">
+      <DependentUpon>Admin_daftar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_diskon.resx">
+      <DependentUpon>Admin_diskon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_diskon_dialog.resx">
+      <DependentUpon>Admin_diskon_dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_tambah.resx">
+      <DependentUpon>Admin_tambah.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin_menu.resx">
+      <DependentUpon>Admin_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHistory.resx">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasir\FormStruk.resx">
+      <DependentUpon>FormStruk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasir\Kasir_history.resx">
+      <DependentUpon>Kasir_history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasir\Kasir_menu.resx">
+      <DependentUpon>Kasir_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasir\Kasir_transaksi.resx">
+      <DependentUpon>Kasir_transaksi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner\Owner_menu.resx">
+      <DependentUpon>Owner_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Owner\Owner_register.resx">
+      <DependentUpon>Owner_register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RoundedPanel.resx">
+      <DependentUpon>RoundedPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\admin_buang.png" />
+    <Content Include="Image\admin_daftar.png" />
+    <Content Include="Image\admin_diskon.png" />
+    <Content Include="Image\admin_tambah.png" />
+    <Content Include="Image\delete.png" />
+    <Content Include="Image\history.png" />
+    <Content Include="Image\Kasir_transaksi.png" />
+    <Content Include="Image\logo.png" />
+    <Content Include="Image\logout.png" />
+    <Content Include="Image\owner_pegawai.png" />
+    <Content Include="Image\owner_report.png" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_rotiModelStoreContainer" CdmEntityContainer="db_rotiEntities">
+    <EntitySetMapping Name="buangs">
+      <EntityTypeMapping TypeName="db_rotiModel.buang">
+        <MappingFragment StoreEntitySet="buangs">
+          <ScalarProperty Name="kode_buang" ColumnName="kode_buang" />
+          <ScalarProperty Name="kode_roti" ColumnName="kode_roti" />
+          <ScalarProperty Name="kode_jenis" ColumnName="kode_jenis" />
+          <ScalarProperty Name="nama_roti" ColumnName="nama_roti" />
+          <ScalarProperty Name="harga" ColumnName="harga" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="subtotal" ColumnName="subtotal" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="expired_at" ColumnName="expired_at" />
+          <ScalarProperty Name="dibuang_at" ColumnName="dibuang_at" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dbundles">
+      <EntityTypeMapping TypeName="db_rotiModel.dbundle">
+        <MappingFragment StoreEntitySet="dbundles">
+          <ScalarProperty Name="kode_dbundle" ColumnName="kode_dbundle" />
+          <ScalarProperty Name="kode_bundle" ColumnName="kode_bundle" />
+          <ScalarProperty Name="kode_roti" ColumnName="kode_roti" />
+          <ScalarProperty Name="harga_roti" ColumnName="harga_roti" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="diskons">
+      <EntityTypeMapping TypeName="db_rotiModel.diskon">
+        <MappingFragment StoreEntitySet="diskons">
+          <ScalarProperty Name="kode_diskon" ColumnName="kode_diskon" />
+          <ScalarProperty Name="tanggal_mulai" ColumnName="tanggal_mulai" />
+          <ScalarProperty Name="tanggal_selesai" ColumnName="tanggal_selesai" />
+          <ScalarProperty Name="harga_before" ColumnName="harga_before" />
+          <ScalarProperty Name="potongan" ColumnName="potongan" />
+          <ScalarProperty Name="harga_after" ColumnName="harga_after" />
+          <ScalarProperty Name="nama" ColumnName="nama" />
+          <ScalarProperty Name="keterangan" ColumnName="keterangan" />
+          <ScalarProperty Name="kode_roti" ColumnName="kode_roti" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dtrans">
+      <EntityTypeMapping TypeName="db_rotiModel.dtran">
+        <MappingFragment StoreEntitySet="dtrans">
+          <ScalarProperty Name="dtrans_id" ColumnName="dtrans_id" />
+          <ScalarProperty Name="htrans_id" ColumnName="htrans_id" />
+          <ScalarProperty Name="kode_roti" ColumnName="kode_roti" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="harga" ColumnName="harga" />
+          <ScalarProperty Name="subtotal" ColumnName="subtotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hbundles">
+      <EntityTypeMapping TypeName="db_rotiModel.hbundle">
+        <MappingFragment StoreEntitySet="hbundles">
+          <ScalarProperty Name="kode_bundle" ColumnName="kode_bundle" />
+          <ScalarProperty Name="tanggal_mulai" ColumnName="tanggal_mulai" />
+          <ScalarProperty Name="tanggal_selesai" ColumnName="tanggal_selesai" />
+          <ScalarProperty Name="keterangan" ColumnName="keterangan" />
+          <ScalarProperty Name="harga_before" ColumnName="harga_before" />
+          <ScalarProperty Name="potongan" ColumnName="potongan" />
+          <ScalarProperty Name="harga_after" ColumnName="harga_after" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="htrans">
+      <EntityTypeMapping TypeName="db_rotiModel.htran">
+        <MappingFragment StoreEntitySet="htrans">
+          <ScalarProperty Name="htrans_id" ColumnName="htrans_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="subtotal" ColumnName="subtotal" />
+          <ScalarProperty Name="total_item" ColumnName="total_item" />
+          <ScalarProperty Name="total_diskon" ColumnName="total_diskon" />
+          <ScalarProperty Name="tanggal" ColumnName="tanggal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="jenis_roti">
+      <EntityTypeMapping TypeName="db_rotiModel.jenis_roti">
+        <MappingFragment StoreEntitySet="jenis_roti">
+          <ScalarProperty Name="kode_jenis" ColumnName="kode_jenis" />
+          <ScalarProperty Name="nama" ColumnName="nama" />
+          <ScalarProperty Name="exp" ColumnName="exp" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="harga" ColumnName="harga" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rotis">
+      <EntityTypeMapping TypeName="db_rotiModel.roti">
+        <MappingFragment StoreEntitySet="rotis">
+          <ScalarProperty Name="kode_roti" ColumnName="kode_roti" />
+          <ScalarProperty Name="kode_jenis" ColumnName="kode_jenis" />
+          <ScalarProperty Name="created_at" ColumnName="created_at" />
+          <ScalarProperty Name="expired_at" ColumnName="expired_at" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="transDiskons">
+      <EntityTypeMapping TypeName="db_rotiModel.transDiskon">
+        <MappingFragment StoreEntitySet="transDiskon">
+          <ScalarProperty Name="transDiskon_id" ColumnName="transDiskon_id" />
+          <ScalarProperty Name="kode_diskon" ColumnName="kode_diskon" />
+          <ScalarProperty Name="htrans_id" ColumnName="htrans_id" />
+          <ScalarProperty Name="potongan" ColumnName="potongan" />
+          <ScalarProperty Name="keterangan" ColumnName="keterangan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="db_rotiModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="nama" ColumnName="nama" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="role" ColumnName="role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

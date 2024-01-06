@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fa6dbd592732461495077ed49a337537" Name="Diagram1">
+        <EntityTypeShape EntityType="db_rotiModel.buang" Width="1.5" PointX="5.25" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_rotiModel.dbundle" Width="1.5" PointX="8.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_rotiModel.diskon" Width="1.5" PointX="5.25" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_rotiModel.dtran" Width="1.5" PointX="8.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_rotiModel.hbundle" Width="1.5" PointX="6" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_rotiModel.htran" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_rotiModel.jenis_roti" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_rotiModel.roti" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_rotiModel.transDiskon" Width="1.5" PointX="7.5" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_rotiModel.user" Width="1.5" PointX="3.75" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="db_rotiModel.FK_FKBUANG_JENIS_ROTI" ManuallyRouted="false" />
+        <AssociationConnector Association="db_rotiModel.FK_FKBUANG_ROTI" ManuallyRouted="false" />
+        <AssociationConnector Association="db_rotiModel.FK_FKBUNDLE_BUNDLE" ManuallyRouted="false" />
+        <AssociationConnector Association="db_rotiModel.FK_FKPRODUCT_ROTI" ManuallyRouted="false" />
+        <AssociationConnector Association="db_rotiModel.FK_DISKON_TRANSDISKON" ManuallyRouted="false" />
+        <AssociationConnector Association="db_rotiModel.FK_FKDISKON_ROTI" ManuallyRouted="false" />
+        <AssociationConnector Association="db_rotiModel.FK_FKHTRANS_ROTI" ManuallyRouted="false" />
+        <AssociationConnector Association="db_rotiModel.FK_FKKODE_ROTI_HTRANS" ManuallyRouted="false" />
+        <AssociationConnector Association="db_rotiModel.FK_BUNDLE_TRANSDISKON" ManuallyRouted="false" />
+        <AssociationConnector Association="db_rotiModel.FK_FKUSER_ROTI" ManuallyRouted="false" />
+        <AssociationConnector Association="db_rotiModel.FK_HTRANS_TRANSDISKON" ManuallyRouted="false" />
+        <AssociationConnector Association="db_rotiModel.FK_FKJENIS_ROTI" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
